@@ -16,11 +16,19 @@ public class CardTrick {
         
         Card[] magicHand = new Card[7];
         Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+        random.setSeed(0);
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)
+            c.setValue(random.nextInt(13) + 1);
+           
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setSuit(Card.SUITS[random.nextInt(4)]);
+            magicHand[i] = c;
+            System.out.println(c);
         }
+        
 
         //insert code to ask the user for Card value and suit, create their card
         System.out.print("Enter card value: ");
@@ -28,6 +36,10 @@ public class CardTrick {
         System.out.print("Enter suit: ");
         String suit = sc.nextLine();
        
+        Card card = new Card();
+        card.setValue(val);
+        card.setSuit(suit);
+        
         // and search magicHand here
         //Then report the result here
     }
