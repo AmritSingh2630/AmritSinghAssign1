@@ -31,6 +31,22 @@ public class Card {
     public void setSuit(String suit) {
         this.suit = suit;
     }
+    
+    /**
+     * 
+     * @return value
+     */
+    public int getValue() {
+        return value;
+    }
+    
+    /**
+     * 
+     * @param value to set value
+     */
+    public void setValue(int value) {
+        this.value = value;
+    }
    
    
     
