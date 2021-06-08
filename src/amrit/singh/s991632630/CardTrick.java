@@ -42,12 +42,12 @@ public class CardTrick {
         
         // and search magicHand here
         Card card2 = new Card();
-        card.setValue(12);
-        card.setSuit("Hearts");
+        card2.setValue(12);
+        card2.setSuit("Hearts");
         boolean found = false;
-        System.out.println("Searching for: " +card);
+        System.out.println("Searching for: " +card2);
         for(int i = 0; i<magicHand.length; i++){
-            if((magicHand[i].getValue()==card.getValue()) && magicHand[i].getSuit().equalsIgnoreCase(card.getSuit()))
+            if((magicHand[i].getValue()==card2.getValue()) && magicHand[i].getSuit().equalsIgnoreCase(card2.getSuit()))
             {
                 //Then report the result here
                 System.out.println("card is found at index" + (i+1));
