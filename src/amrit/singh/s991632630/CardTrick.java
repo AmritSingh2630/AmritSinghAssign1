@@ -41,7 +41,7 @@ public class CardTrick {
         card.setSuit(suit);
         
         // and search magicHand here
-        Card card = new Card();
+        Card card2 = new Card();
         card.setValue(12);
         card.setSuit("Hearts");
         boolean found = false;
