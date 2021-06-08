@@ -41,7 +41,23 @@ public class CardTrick {
         card.setSuit(suit);
         
         // and search magicHand here
-        //Then report the result here
+        Card card = new Card();
+        card.setValue(12);
+        card.setSuit("Hearts");
+        boolean found = false;
+        System.out.println("Searching for: " +card);
+        for(int i = 0; i<magicHand.length; i++){
+            if((magicHand[i].getValue()==card.getValue()) && magicHand[i].getSuit().equalsIgnoreCase(card.getSuit()))
+            {
+                //Then report the result here
+                System.out.println("card is found at index" + (i+1));
+                found=true;
+            }
+            else{
+                System.out.println("card is not found in magix hands");
+            }
+        }
+        
     }
 
 }
