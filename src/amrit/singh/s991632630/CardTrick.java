@@ -1,4 +1,4 @@
-package pickacard;
+package amrit.singh.s991632630;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects and then asks the user to pick a card and
